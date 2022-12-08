@@ -1,1 +1,3 @@
-# DL for CV final project: 3D human reconstruction from a single RGB image
+DL for CV final project:      
+
+3D human model reconstruction from a single RGB image
