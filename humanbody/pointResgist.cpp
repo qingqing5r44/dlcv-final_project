@@ -1,0 +1,2 @@
+#include "pointResgist.h"
+

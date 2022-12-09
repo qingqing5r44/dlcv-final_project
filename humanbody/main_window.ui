@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Main</class>
+ <widget class="QDialog" name="Main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>723</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>基于PANOMAN参数化模型的三维人体重建</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>120</y>
+     <width>441</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_openpose">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>610</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>提取关键点</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_smplifyx">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>610</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>估计参数</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_panoman">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>610</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重建PANOMAN模型</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_upload">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>上传照片</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_photo">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>60</y>
+     <width>441</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_openpose">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>680</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_smplifyx">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>680</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_panoman">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>680</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_openpose</sender>
+   <signal>clicked()</signal>
+   <receiver>Main</receiver>
+   <slot>LoadOpenpose()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>130</x>
+     <y>635</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>519</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_panoman</sender>
+   <signal>clicked()</signal>
+   <receiver>Main</receiver>
+   <slot>LoadPANOMAN()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>900</x>
+     <y>635</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>519</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_smplifyx</sender>
+   <signal>clicked()</signal>
+   <receiver>Main</receiver>
+   <slot>LoadSmplifyx()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>510</x>
+     <y>635</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>519</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_upload</sender>
+   <signal>clicked()</signal>
+   <receiver>Main</receiver>
+   <slot>UploadPhoto()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>86</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>519</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>LoadOpenpose()</slot>
+  <slot>LoadSmplifyx()</slot>
+  <slot>LoadPANOMAN()</slot>
+  <slot>UploadPhoto()</slot>
+ </slots>
+</ui>
