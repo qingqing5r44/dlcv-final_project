@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Nov 13 15:57:03 2018
-
-@author: asus
-"""
-
 import tensorflow as tf
 sess = tf.compat.v1.Session()
 a = tf.constant(2)

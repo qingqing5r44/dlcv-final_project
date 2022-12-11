@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Nov 14 00:20:09 2018
-
-@author: asus
-"""
-
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
