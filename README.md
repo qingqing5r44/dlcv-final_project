@@ -8,4 +8,4 @@ OpenPose folder includes the code for reimplementing the OpenPose network, train
 
 SMPLify-X folder includes the official code provided by the team. Here I made small changes to fit my need.            
 
-PanoMan folder includes the code of implementing the PanoMan human model, the trained MLP for transferring the SMPL pose parameters into PanoMan mixed coefficients, reconstruction procedure, and the GUI for the 3D reconstruction system.                 
+PanoMan folder includes the code of implementing the PanoMan human model, the trained MLP for transferring the SMPL pose parameters into PanoMan mixed coefficients, reconstruction procedure, and the qt ui file and scripts for the 3D reconstruction system.                 
